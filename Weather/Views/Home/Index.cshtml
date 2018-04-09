@@ -1,0 +1,22 @@
+﻿<div class="form-group">
+
+  @using (Html.BeginForm("DisplayResult", "Home", FormMethod.Post))
+    {
+    <div class="d-flex justify-content-center pt-4">
+      Enter Country
+    </div>
+    <div class="d-flex justify-content-center pt-2">
+      @Html.TextBox("country", null)
+    </div>
+    <div class="d-flex justify-content-center">
+      Enter City
+    </div>
+    <div class="d-flex justify-content-center pt-2">
+      @Html.TextBox("city", null)
+    </div>
+
+    <div class="d-flex justify-content-center pt-4">
+      <input type="submit" value="Submit" />
+    </div>
+  }
+</div>
